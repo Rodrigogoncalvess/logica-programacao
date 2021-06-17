@@ -1,4 +1,4 @@
-/*
+package academy.devdojo.estruturascondicionais;/*
 Dado um determinado salário
 Se o salário for maior que 4500 imprima 30% do valor senão imprima 15% do valor
 Desafio: Utilize apenas uma variável para guarda o resultado final e imrimir na tela

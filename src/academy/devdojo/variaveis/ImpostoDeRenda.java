@@ -1,3 +1,5 @@
+package academy.devdojo.variaveis;
+
 public class ImpostoDeRenda {
     public static void main(String[] args) {
 

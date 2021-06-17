@@ -1,4 +1,4 @@
-/*
+package academy.devdojo.estruturascondicionais;/*
 Dado determinado numero inteiro
 Imprima se ele é ímpar ou par
 Resto da divisão por 2 ser for par sempre vai ser 0 senão vai ser ímpar
