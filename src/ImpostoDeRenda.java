@@ -5,7 +5,7 @@ public class ImpostoDeRenda {
 
         if (salario <= 1903.98) {
             System.out.println("Isento");
-            
+
         } else if (salario >= 1903.99 && salario <= 2826.65) {
             System.out.println("7.5% " + (salario * 0.075));
 
