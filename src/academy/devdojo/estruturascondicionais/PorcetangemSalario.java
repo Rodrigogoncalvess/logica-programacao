@@ -1,3 +1,5 @@
+package academy.devdojo.estruturascondicionais;
+
 public class PorcetangemSalario {
     public static void main(String[] args) {
 
