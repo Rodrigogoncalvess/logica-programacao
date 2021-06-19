@@ -1,36 +1,40 @@
 package academy.devdojo.playlist01;
 /*
 Em um circuito elétrico temos as seguintes informações:
-275 Ω e 1 A, calcule a tensão elétrica, utilizando a fórmula abaixo:
-𝑈 = 𝑅 · 𝐼
+12 V e 175 Ω, calcule a corrente elétrica, utilizando a fórmula abaixo:
+𝐼 = 𝑈
+𝑅
 Onde:
+I = Corrente em Amperes
 U = Tensão em Volts
 R = Resistência em Ohms
-I = Corrente em Amperes
 BÔNUS: Altere o programa acima e permita que o usuário digite os valores
-para Ohms e Amperes.
+para Volts e Ohms.
  */
 
 import java.util.Scanner;
 
-public class Exercicio19B {
+public class Exercicio19C {
     public static void main(String[] args) {
 
-        float ohms;
-        float volts;
         float amperes;
+        float volts;
+        float ohms;
+
 
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Informe a tensão em Volts: ");
+        volts = scanner.nextFloat();
+
         System.out.println("Informe a resistência em Ohms: ");
         ohms = scanner.nextFloat();
 
-        System.out.println("Informe a corrente em Amperes: ");
-        amperes = scanner.nextFloat();
 
-        volts = ohms * amperes;
+        amperes = volts / ohms;
 
 
-        System.out.println("Resultado da tensão em Volts: " + volts);
+        System.out.printf("Resultado da corrente em Amperes:%.3f A ", amperes);
 
 
     }
