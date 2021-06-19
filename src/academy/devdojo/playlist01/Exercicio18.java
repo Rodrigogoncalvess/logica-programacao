@@ -1,30 +1,26 @@
 package academy.devdojo.playlist01;
 /*
-Ler valores para as variáveis x e y, trocar os valores das variáveis e apresentar o
-resultado dos valores invertidos.
+Desenvolva uma rotina que dado um número inteiro qualquer calcule seu antecessor
+e seu sucessor.
  */
-import java.util.Scanner;
 
-public class Exercicio07 {
+import javax.swing.*;
+
+public class Exercicio18 {
     public static void main(String[] args) {
 
-        int var1;
-        int var2;
-        int trocar;
+        int numero;
+        int antecessor;
+        int sucessor;
 
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Informe o valor da variável 1:");
-        var1= scanner.nextInt();
-        System.out.println("Informe o valor da variável 2:");
-        var2 = scanner.nextInt();
-
-        trocar = var1;
-        var1 = var2;
-        var2 = trocar;
-
-        System.out.println("Valor de variável 1 é: "+var1);
-        System.out.println("Valor de variável 2 é: "+var2);
-
+        numero = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero"));
+        antecessor = numero - 1;
+        sucessor = numero + 1;
+        JOptionPane.showMessageDialog(null,
+                "O valor do antecessor: " + antecessor + "\n" +
+                        "O valor do sucessor: " + sucessor);
     }
+
+
 }
