@@ -1,34 +1,34 @@
 package academy.devdojo.playlist01;
 /*
-Escreva uma rotina capaz de calcular e apresentar o valor do volume de uma lata de
-óleo, utilize a fórmula abaixo.
-𝑉 = π𝑅 2 × 𝐴
+Elabore uma rotina que apresente o valor do volume de uma esfera, utilize a fórmula
+abaixo:
+𝑉 = (4 ÷ 3)Π(𝑅 3)
 Onde:
 V = Volume
-π= 3.141592654
-R = Raio da circunferência da lata
-A = Altura da lata
-OBS: O volume deve ser apresentado com a unidade de medida correto 𝑐𝑚 .
+π = 3.141592654
+R = Raio
+
+
+Ve = 4.п.r3/3
  */
+
 import java.util.Scanner;
 
-public class Exercicio05 {
+public class Exercicio16 {
     public static void main(String[] args) {
 
         double volume;
-        final double pi = 3.141592654;
+        final double pi =3.141592654;
         double raio;
-        double altura;
 
         Scanner imput = new Scanner(System.in);
-        System.out.println("Informe altura da lata: ");
-        altura = imput.nextDouble();
+        System.out.println("Informe o tamanho da esfera: ");
 
-        System.out.println("Informe a circunferência da lata :");
-        raio = imput.nextDouble();
+        raio=imput.nextDouble();
+        //utilizei outro formula que segue no início da classe.
+        volume = (4*pi*(Math.pow(raio,3))/3);
 
-        volume = pi * (raio * raio) * altura;
-        System.out.printf("Unidade medida: %.2f cm³", volume);
+        System.out.printf("Volume de uma esfera: %.2f", volume);
 
 
     }
