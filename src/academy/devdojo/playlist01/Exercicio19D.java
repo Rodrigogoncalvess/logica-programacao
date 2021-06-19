@@ -1,25 +1,28 @@
 package academy.devdojo.playlist01;
 /*
-Em um circuito elétrico temos as seguintes informações:
-12 V e 175 Ω, calcule a corrente elétrica, utilizando a fórmula abaixo:
-𝐼 = 𝑈
-𝑅
+Ainda podemos realizar o cálculo de potência elétrica, desenvolva um rotina
+que calculo a potência de um equipamento, utilizando os dados e a fórmula a
+seguir:
+Dados:
+220 V e 25 A
+Fórmula:
+𝑃 = 𝑈 · 𝐼
 Onde:
-I = Corrente em Amperes
+P = Potência em Watts
 U = Tensão em Volts
-R = Resistência em Ohms
+I = Corrente em Amperes
 BÔNUS: Altere o programa acima e permita que o usuário digite os valores
-para Volts e Ohms.
+para Volts e Amperes.
  */
 
 import java.util.Scanner;
 
-public class Exercicio19C {
+public class Exercicio19D {
     public static void main(String[] args) {
 
-        float amperes;
+        float watts;
         float volts;
-        float ohms;
+        float amperes;
 
 
         Scanner scanner = new Scanner(System.in);
@@ -27,14 +30,14 @@ public class Exercicio19C {
         System.out.println("Informe a tensão em Volts: ");
         volts = scanner.nextFloat();
 
-        System.out.println("Informe a resistência em Ohms: ");
-        ohms = scanner.nextFloat();
+        System.out.println("Informe a corrente em Amperes: ");
+        amperes = scanner.nextFloat();
 
 
-        amperes = volts / ohms;
+        watts = volts * amperes;
 
 
-        System.out.printf("Resultado da corrente em Amperes:%.3f A ", amperes);
+        System.out.printf("Resultado da potência em Watts: %.2f W ", watts);
 
 
     }
