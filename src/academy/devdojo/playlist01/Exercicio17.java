@@ -1,34 +1,25 @@
 package academy.devdojo.playlist01;
 /*
-Elabore uma rotina que apresente o valor do volume de uma esfera, utilize a fórmula
-abaixo:
-𝑉 = (4 ÷ 3)Π(𝑅 3)
-Onde:
-V = Volume
-π = 3.141592654
-R = Raio
-
-
-Ve = 4.п.r3/3
+Sabendo que 1 ft é igual a 0,3048 m ou 30,48 cm, desenvolva um programa que leia
+uma medida em pés e calcule o equivalente em metros.
  */
 
 import java.util.Scanner;
 
-public class Exercicio16 {
+public class Exercicio17 {
     public static void main(String[] args) {
 
-        double volume;
-        final double pi =3.141592654;
-        double raio;
+        double medida;
+        double ft = 0.3048;
+        double metro;
 
         Scanner imput = new Scanner(System.in);
-        System.out.println("Informe o tamanho da esfera: ");
+        System.out.println("Informe a medida em pés que deseja converter para metros: ");
+        medida = imput.nextDouble();
+        metro = medida * ft;
 
-        raio=imput.nextDouble();
-        //utilizei outro formula que segue no início da classe.
-        volume = (4*pi*(Math.pow(raio,3))/3);
 
-        System.out.printf("Volume de uma esfera: %.2f", volume);
+        System.out.printf("conversão em metros: %.2f ", metro);
 
 
     }
