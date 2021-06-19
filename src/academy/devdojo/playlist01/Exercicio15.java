@@ -1,20 +1,31 @@
 package academy.devdojo.playlist01;
+/*
+Construa um programa que calcule a velocidade em metros por segundo de um
+projétil que percorre uma distância em quilômetros a um espaço de tempo em
+minutos, utilize a fórmula abaixo:
+𝑉 = (𝐷 · 1000) ÷ (𝑇 · 60)
+Onde:
+V = Velocidade em m/s
+D = Distância
+T = Tempo
+ */
 
-public class Exercicio01 {
+
+import javax.swing.*;
+
+public class Exercicio15 {
     public static void main(String[] args) {
 
-        double area;
-        final double pi = 3.141592654;
-        double raio = -1;
+        double velocidade;
+        double distancia;
+        double tempo;
 
-        if (raio > 0) {
-            area = pi * (raio*raio);
-            System.out.printf("Area do circulo é : "+area);
-        }else {
-            System.out.println("Raio do circulo não pode ser <= 0!");
+        JOptionPane.showMessageDialog(null, "Programa para informa a velocidade do projétil ");
+        distancia = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe a distância em que o projétil percorreu: "));
 
+        tempo = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe o tempo que o projétil percorreu: "));
+        velocidade = (distancia * 1000) / (tempo * 60);
 
-        }
-
+        JOptionPane.showMessageDialog(null, String.format("Velocidade em metros por segundo:%.2f ", velocidade));
     }
 }
