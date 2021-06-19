@@ -13,12 +13,12 @@ para Volts e Amperes.
  */
 import java.util.Scanner;
 
-public class Exercicio19 {
+public class Exercicio19A {
     public static void main(String[] args) {
 
         float ohms;
-        float volts=275;
-        float amperes=10;
+        float volts;
+        float amperes;
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Informe a tensão em volts: ");
@@ -30,7 +30,7 @@ public class Exercicio19 {
         ohms = volts / amperes;
 
 
-        System.out.println("Resultado da resitência em Ohms: " + ohms);
+        System.out.println("Resultado da resitência em Ohms: " + ohms+" Ω");
 
 
     }
