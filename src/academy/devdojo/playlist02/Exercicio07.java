@@ -1,13 +1,18 @@
 package academy.devdojo.playlist02;
 /*
-Desenvolva uma rotina que leia dois valores numéricos inteiros e apresente o
-resultado das quatro operações aritméticas básicas (adição, subtração, multiplicação
-e divisão).
+Crie uma calculadora que seja capaz de realizar as quatro operações
+básicas. Para tal cumpra-se os seguintes requisitos:
+
+a) A calculadora deve apresentar um menu e perguntar qual a operação
+desejada (+, -, * ou /).
+
+b) A calculadora deve solicitar os dois valores numéricos, realizar a
+operação e exibir o resultado.
  */
 
 import javax.swing.*;
 
-public class Exercicio7 {
+public class Exercicio07 {
     public static void main(String[] args) {
 
         int numero1;
