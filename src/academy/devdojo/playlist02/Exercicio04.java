@@ -1,42 +1,36 @@
 package academy.devdojo.playlist02;
 /*
-Desenvolva a leitura de cinco valores numéricos inteiros e apresente
-somente os que forem divisíveis por 2 ou por 3.
+Escreva um programa que dados cinco valores numéricos inteiros apresente
+apenas o maior e o menor deles.
  */
 
 import java.util.Scanner;
 
-public class Exercicio03 {
+public class Exercicio04 {
     public static void main(String[] args) {
 
         int[] numeros = new int[5];
+        int maior = 0;
+        int menor = 0;
 
         Scanner scanner = new Scanner(System.in);
 
         for (int i = 0; i < numeros.length; i++) {
-            System.out.println("Informe o número:");
+            System.out.println("Informe um valor :");
             numeros[i] = scanner.nextInt();
         }
-
-
         for (int i = 0; i < numeros.length; i++) {
-
-            if (numeros[i] % 2 == 0) {
-                System.out.println("Número " + numeros[i] + " é divido por 2");
-            } else {
-                System.out.println("O número " + numeros[i] + " não é divididos 2 ");
-
+            {
+                if (numeros[i] > maior) {
+                    maior = numeros[i];
+                }
+                if (numeros[i] <= numeros[0]) {
+                    menor = numeros[i];
+                }
             }
         }
-        for (int j = 0; j < numeros.length; j++) {
-            if (numeros[j] % 3 == 0) {
-                System.out.println("Número " + numeros[j] + " é divido por 3");
-            } else {
-                System.out.println("O Número " + numeros[j] + " não é divido por 3");
-            }
-        }
+        System.out.println("Menor valor digitado foi: " + menor);
+        System.out.println("Maior valor digitado foi: " + maior);
     }
 }
-
-
 
