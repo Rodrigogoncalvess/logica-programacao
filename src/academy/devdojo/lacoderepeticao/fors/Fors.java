@@ -1,4 +1,4 @@
-package academy.devdojo.lacoderepeticao.whiles;
+package academy.devdojo.lacoderepeticao.fors;
 
 public class Fors {
     public static void main(String[] args) {
