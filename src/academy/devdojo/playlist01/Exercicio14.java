@@ -5,7 +5,7 @@ resultado das quatro operações aritméticas básicas (adição, subtração, m
 e divisão).
  */
 
-import javax.swing.*;
+import java.util.Scanner;
 
 public class Exercicio14 {
     public static void main(String[] args) {
@@ -13,54 +13,25 @@ public class Exercicio14 {
         int numero1;
         int numero2;
         int calculo;
-        int opcao = 0;
+      
+        Scanner scanner = new Scanner(System.in);
 
-//        Scanner scan = new Scanner(System.in);
+        System.out.println("Digite o valor desejado:");
+        numero1 = scanner.nextInt();
 
-        while (opcao != 5) {
-            JOptionPane.showMessageDialog(null, "Opção 1 para adição (+)" + "\n"
-                    + "Opção 2 para subtração (-)" + "\n"
-                    + "Opção 3 para multiplicação (*)" + "\n"
-                    + "Opção 4 para divisão (/)" + "\n"
-                    + "\n" + "Opção 5 para sair.");
+        System.out.println("Digite o valor desejado:");
+        numero2 = scanner.nextInt();
 
-            opcao = Integer.parseInt(JOptionPane.showInputDialog("Digite um das opçoes"));
+        System.out.println("Valor das quatro operação aritméticas: ");
 
-            switch (opcao) {
-                case 1:
-                    numero1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o primeiro número: "));
-                    numero2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o segundo número: "));
-                    System.out.println("Informe o segundo número: ");
-                    calculo = numero1 + numero2;
-                    JOptionPane.showMessageDialog(null, "A soma dos números informados é: " + calculo);
-                    break;
-                case 2:
-                    numero1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o primeiro número: "));
-                    numero2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o segundo número: "));
-                    calculo = numero1 - numero2;
-                    JOptionPane.showMessageDialog(null, "A subritação dos números informados é: " + calculo);
-                    break;
-                case 3:
-                    numero1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o primeiro número: "));
-                    numero2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o segundo número: "));
-                    calculo = numero1 * numero2;
-                    JOptionPane.showMessageDialog(null, "A multiplicação dos números informados é: " + calculo);
-                    break;
-
-                case 4:
-                    numero1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o primeiro número: "));
-                    numero2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o segundo número: "));
-                    calculo = numero1 / numero2;
-                    JOptionPane.showMessageDialog(null, "A divisão dos números informados é: " + calculo);
-                    break;
-                case 5:
-                    break;
-                default:
-                    JOptionPane.showMessageDialog(null, "Opção inválida");
-                    break;
-            }
-        }
-        JOptionPane.showMessageDialog(null, "Finalizado");
+        calculo = numero1 + numero2;
+        System.out.println("Valor da adição: " + calculo);
+        calculo = numero1 - numero2;
+        System.out.println("Valor da subtração: " + calculo);
+        calculo = numero1 * numero2;
+        System.out.println("Valor da multiplicação: " + calculo);
+        calculo = numero1 / numero2;
+        System.out.println("Valor da divisão: " + calculo);
     }
 
 }
