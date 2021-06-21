@@ -1,40 +1,42 @@
 package academy.devdojo.playlist02;
 /*
-Desenvolva uma rotina que dados três números inteiros, apresente-os em
-ordem crescente
+Desenvolva a leitura de cinco valores numéricos inteiros e apresente
+somente os que forem divisíveis por 2 ou por 3.
  */
-import javax.swing.*;
 
-public class Exercicio02 {
+import java.util.Scanner;
+
+public class Exercicio03 {
     public static void main(String[] args) {
 
-        int numero1;
-        int numero2;
-        int numero3;
-        int dados;
+        int[] numeros = new int[5];
 
-        numero1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o numero 1"));
-        numero2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o numero 2"));
-        numero3 = Integer.parseInt(JOptionPane.showInputDialog("Digite o numero 3"));
+        Scanner scanner = new Scanner(System.in);
 
-        if (numero1 > numero2) {
-            dados = numero1;
-            numero1 = numero2;
-            numero2 = dados;
-        }
-        if (numero2 > numero3) {
-            dados = numero2;
-            numero2 = numero3;
-            numero3 = dados;
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.println("Informe o número:");
+            numeros[i] = scanner.nextInt();
         }
 
-        if (numero1 > numero2) {
-            dados = numero1;
-            numero1 = numero2;
-            numero2 = dados;
+
+        for (int i = 0; i < numeros.length; i++) {
+
+            if (numeros[i] % 2 == 0) {
+                System.out.println("Número " + numeros[i] + " é divido por 2");
+            } else {
+                System.out.println("O número " + numeros[i] + " não é divididos 2 ");
+
+            }
         }
-
-        JOptionPane.showMessageDialog(null, "Ordem crescente: " + numero1 + " " + numero2 + " " + numero3);
-
+        for (int j = 0; j < numeros.length; j++) {
+            if (numeros[j] % 3 == 0) {
+                System.out.println("Número " + numeros[j] + " é divido por 3");
+            } else {
+                System.out.println("O Número " + numeros[j] + " não é divido por 3");
+            }
+        }
     }
 }
+
+
+
