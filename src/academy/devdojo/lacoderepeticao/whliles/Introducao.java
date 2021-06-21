@@ -1,4 +1,4 @@
-package academy.devdojo.lacoderepeticao;
+package academy.devdojo.lacoderepeticao.whliles;
 
 public class Introducao {
     public static void main(String[] args) {
