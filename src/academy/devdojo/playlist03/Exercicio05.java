@@ -1,18 +1,24 @@
 package academy.devdojo.playlist03;
 
 /*
-Elaborar uma rotina que apresente todos os números pares na faixa de 0 até 100.
+Elaborar um programa que apresente a sequência de Fibonacci até o décimo quinto
+termo.
  */
-public class Exercicio04 {
+public class Exercicio05 {
     public static void main(String[] args) {
 
+        int num1 = 1;
+        int num2 = 0;
 
-        System.out.println("Números pares na faxia 1 à 100");
-        for (int i = 0; i <= 100; i++) {
-            if (i % 2 == 0)
-                System.out.println(i);
+        for (int i = 0; i < 15; i++) {
+            num1 = num1 + num2;
+            num2 = num1 - num2;
+            System.out.println(num1);
+
         }
     }
+
 }
+
 
 
