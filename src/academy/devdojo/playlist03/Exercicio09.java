@@ -3,24 +3,29 @@ package academy.devdojo.playlist03;
 import java.util.Scanner;
 
 /*
-Desenvolva um programa que dado um número inteiro apresente as tabuadas do 1
-ao 10 desse número.
+Melhore a calculadora desenvolvida anteriormente acrescentando as seguintes
+funcionalidades:
+a) Sempre ao final de um cálculo a calculadora deve mostrar o menu
+novamente.
+b) Acrescentar uma opção para sair da calculadora, como sugestão, quando o
+usuário digitar 0 (zero) por exemplo, a calculadora deve ser encerrada.
  */
-public class Exercicio08 {
+public class Exercicio09 {
     public static void main(String[] args) {
 
         int numero;
-        int opcao = 0;
+        int opcao=1 ;
+
 
         Scanner scanner = new Scanner(System.in);
 
 
-        while (opcao != 5) {
+        while (opcao <= 5 && opcao>0) {
 
             System.out.println("Opção 1 tabuada de adição" + "\n"
                     + "Opção 2 tabuada subtração" + "\n"
                     + "Opção 3 tabuada multiplicação"
-                    + "\n" + "Opção 4 tabuada divisão\n" + "Opção 5 sair\n");
+                    + "\n" + "Opção 4 tabuada divisão\n" + "Opção 0 sair\n");
             opcao = scanner.nextInt();
 
             switch (opcao) {
@@ -52,7 +57,7 @@ public class Exercicio08 {
                         System.out.println((i * numero) + " / " + numero + " = " + (i * numero / numero));
                     }
                     break;
-                case 5:
+                case 0:
                     break;
                 default:
                     System.out.println("Opção inválida");
