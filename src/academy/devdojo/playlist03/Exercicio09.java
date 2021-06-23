@@ -20,9 +20,9 @@ public class Exercicio09 {
         Scanner scanner = new Scanner(System.in);
 
 
-        while (opcao <= 5 && opcao>0) {
+        while (opcao <= 5 && opcao>=0) {
 
-            System.out.println("Opção 1 tabuada de adição" + "\n"
+            System.out.println("\nOpção 1 tabuada de adição" + "\n"
                     + "Opção 2 tabuada subtração" + "\n"
                     + "Opção 3 tabuada multiplicação"
                     + "\n" + "Opção 4 tabuada divisão\n" + "Opção 0 sair\n");
@@ -59,6 +59,7 @@ public class Exercicio09 {
                     break;
                 case 0:
                     break;
+
                 default:
                     System.out.println("Opção inválida");
 
